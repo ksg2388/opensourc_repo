@@ -1,6 +1,6 @@
 #!/bin/bash
 
- 
+echo "project management in github"
 
 num1=$(<num1.txt)
 
