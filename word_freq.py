@@ -17,6 +17,9 @@ f = open(filename, 'r')
 x = f.readlines()
 
 for i in x:
+    if i == '\n':
+        continue
+    i = ' '.join(i.split())
     testlist = (re.split(r'[\W]', i))
     for j in testlist:
         wordlist.append(j)
