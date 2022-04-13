@@ -18,6 +18,10 @@ for i in x:
     for j in testlist:
         wordlist.append(j)
 
+for i in wordlist:
+    if i == '':
+        wordlist.remove('')
+
 print(wordlist)
 
 f.close()
