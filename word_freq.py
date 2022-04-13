@@ -7,3 +7,5 @@ if __name__=='__main__':
         print(argument[1], argument[2])
     else:
         sys.exit("인자 개수가 틀립니다.")
+
+f = open(argument[1], 'r')
