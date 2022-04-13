@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 import re
+from collections import Counter
 
 if __name__=='__main__':
     argument = sys.argv
@@ -21,6 +22,8 @@ for i in x:
 for i in wordlist:
     if i == '':
         wordlist.remove('')
+
+wordlist = Counter(wordlist)
 
 print(wordlist)
 
