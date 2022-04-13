@@ -28,6 +28,6 @@ for i in wordlist:
 worddic = Counter(wordlist)
 
 for i in range(n):
-    print(worddic.most_common(n))
+    print(worddic.most_common(n)[i][0], worddic.most_common(n)[i][1])
 
 f.close()
