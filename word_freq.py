@@ -8,4 +8,9 @@ if __name__=='__main__':
     else:
         sys.exit("인자 개수가 틀립니다.")
 
+wordlist = []
 f = open(argument[1], 'r')
+
+x = f.readlines()
+
+f.close()
