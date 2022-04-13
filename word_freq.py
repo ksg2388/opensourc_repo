@@ -9,8 +9,10 @@ if __name__=='__main__':
     if len(argument) != 3:
         sys.exit("인자 개수가 틀립니다.")
 
+filename = argument[1]
+n = int(argument[2])
 wordlist = []
-f = open(argument[1], 'r')
+f = open(filename, 'r')
 
 x = f.readlines()
 
@@ -23,8 +25,9 @@ for i in wordlist:
     if i == '':
         wordlist.remove('')
 
-wordlist = Counter(wordlist)
+worddic = Counter(wordlist)
 
-print(wordlist)
+for i in range(n):
+    print(worddic.most_common(n))
 
 f.close()
