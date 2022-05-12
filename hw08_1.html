@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crawling Complate</title>
+</head>
+<body>
+    <p>Crawling complates!!</p>
+    <table border = '' class = "table">
+	    <tr>
+		    <th>name</th>
+	    </tr>
+	    {% for name in list %}
+	    <tr>
+		    <td>
+			    {{name}}
+		    </td>
+	    </tr>
+	    {% endfor %}
+    </table>
+    <div>
+	    <button onclick="history.back()">뒤로가기</button>
+    </div>
+</body>
+</html>
+
